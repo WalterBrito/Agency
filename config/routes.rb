@@ -1,4 +1,8 @@
 Rails.application.routes.draw do
+  resources :contacts
+  resources :teams
+  resources :abouts
+  resources :services
   resources :portfolios
   root 'portfolios#index'
 

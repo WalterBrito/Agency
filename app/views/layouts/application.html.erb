@@ -1,12 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
+
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="">
     <meta name="author" content="">
     <title>RailsApp01</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
 
     <!-- Bootstrap Core CSS -->
    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheets">
@@ -14,18 +19,14 @@
    <!-- Custom Fonts -->
    <!-- <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheets" type="text/css">
-   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheets" type="text/css">
-   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheets' type='text/css'>
-   <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheets' type='text/css'>
-   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheets' type='text/css'>
+   <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+   <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+   <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+   <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+   <link href='app/assets/images' rel='stylesheets'>
 
    <!-- Theme CSS -->
    <link href="agency.min.css" rel="stylesheets">
-
-   <%= csrf_meta_tags %>
-
-   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body id="page-top" class="index">
@@ -134,8 +135,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <%= image_tag("roundicons.png", class: "img-responsive", alt: "") %>
-                        <!-- <img src="assets/images/portfolio/roundicons.png" class="img-responsive" alt=""> -->
+                        <%= image_tag("portfolio/roundicons.png", class: "img-responsive", alt: "") %>
                     </a>
                     <div class="portfolio-caption">
                         <h4>Round Icons</h4>
@@ -149,8 +149,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <%= image_tag("startup-framework.png", class: "img-responsive", alt: "") %>
-                        <!-- <img src="assets/images/portfolio/startup-framework.png" class="img-responsive" alt=""> -->
+                        <%= image_tag("portfolio/startup-framework.png", class: "img-responsive", alt: "") %>
                     </a>
                     <div class="portfolio-caption">
                         <h4>Startup Framework</h4>
@@ -164,8 +163,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <%= image_tag("treehouse.png", class: "img-responsive", alt: "") %>
-                        <!-- <img src="assets/images/portfolio/treehouse.png" class="img-responsive" alt=""> -->
+                        <%= image_tag("portfolio/treehouse.png", class: "img-responsive", alt: "") %>                        <
                     </a>
                     <div class="portfolio-caption">
                         <h4>Treehouse</h4>
@@ -179,8 +177,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <%= image_tag("golden.png", class: "img-responsive", alt: "") %>
-                        <!-- <img src="assets/images/portfolio/golden.png" class="img-responsive" alt=""> -->
+                        <%= image_tag("portfolio/golden.png", class: "img-responsive", alt: "") %>
                     </a>
                     <div class="portfolio-caption">
                         <h4>Golden</h4>
@@ -194,8 +191,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <%= image_tag("escape.png", class: "img-responsive", alt: "") %>
-                        <!-- <img src="assets/images/portfolio/escape.png" class="img-responsive" alt=""> -->
+                        <%= image_tag("portfolio/escape.png", class: "img-responsive", alt: "") %>
                     </a>
                     <div class="portfolio-caption">
                         <h4>Escape</h4>
@@ -209,8 +205,7 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <%= image_tag("dreams.png", class: "img-responsive", alt: "") %>
-                        <!-- <img src="assets/images/portfolio/dreams.png" class="img-responsive" alt=""> -->
+                        <%= image_tag("portfolio/dreams.png", class: "img-responsive", alt: "") %>
                     </a>
                     <div class="portfolio-caption">
                         <h4>Dreams</h4>
@@ -314,7 +309,7 @@
             <div class="row">
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="assets/images/team/1.jpg" class="img-responsive img-circle" alt="">
+                        <%= image_tag("team/1.jpg", class: "img-responsive img-circle", alt: "" ) %>
                         <h4>Kay Garland</h4>
                         <p class="text-muted">Lead Designer</p>
                         <ul class="list-inline social-buttons">
@@ -329,7 +324,7 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="assets/images/team/2.jpg" class="img-responsive img-circle" alt="">
+                        <%= image_tag("team/2.jpg", class: "img-responsive img-circle", alt: "" ) %>
                         <h4>Larry Parker</h4>
                         <p class="text-muted">Lead Marketer</p>
                         <ul class="list-inline social-buttons">
@@ -344,7 +339,7 @@
                 </div>
                 <div class="col-sm-4">
                     <div class="team-member">
-                        <img src="assets/images/team/3.jpg" class="img-responsive img-circle" alt="">
+                        <%= image_tag("team/3.jpg", class: "img-responsive img-circle", alt: "" ) %>
                         <h4>Diana Pertersen</h4>
                         <p class="text-muted">Lead Developer</p>
                         <ul class="list-inline social-buttons">
@@ -372,22 +367,22 @@
             <div class="row">
                 <div class="col-md-3 col-sm-6">
                     <a href="#">
-                        <img src="assets/images/logos/envato.jpg" class="img-responsive img-centered" alt="">
+                        <%= image_tag("logos/envato.jpg", class: "img-responsive img-centered", alt: "") %>
                     </a>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <a href="#">
-                        <img src="assets/images/logos/designmodo.jpg" class="img-responsive img-centered" alt="">
+                        <%= image_tag("logos/designmodo.jpg", class: "img-responsive img-centered", alt: "") %>
                     </a>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <a href="#">
-                        <img src="assets/images/logos/themeforest.jpg" class="img-responsive img-centered" alt="">
+                        <%= image_tag("logos/themeforest.jpg", class: "img-responsive img-centered", alt: "") %>
                     </a>
                 </div>
                 <div class="col-md-3 col-sm-6">
                     <a href="#">
-                        <img src="assets/images/logos/creative-market.jpg" class="img-responsive img-centered" alt="">
+                        <%= image_tag("logos/creative-market.jpg", class: "img-responsive img-centered", alt: "") %>
                     </a>
                 </div>
             </div>
