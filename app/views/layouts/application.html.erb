@@ -22,10 +22,10 @@
    <!-- Theme CSS -->
    <link href="agency.min.css" rel="stylesheets">
 
-    <%= csrf_meta_tags %>
+   <%= csrf_meta_tags %>
 
-    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
-    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+   <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body id="page-top" class="index">
@@ -134,7 +134,8 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="assets/images/portfolio/roundicons.png" class="img-responsive" alt="">
+                        <%= image_tag("roundicons.png", class: "img-responsive", alt: "") %>
+                        <!-- <img src="assets/images/portfolio/roundicons.png" class="img-responsive" alt=""> -->
                     </a>
                     <div class="portfolio-caption">
                         <h4>Round Icons</h4>
@@ -148,7 +149,8 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="assets/images/portfolio/startup-framework.png" class="img-responsive" alt="">
+                        <%= image_tag("startup-framework.png", class: "img-responsive", alt: "") %>
+                        <!-- <img src="assets/images/portfolio/startup-framework.png" class="img-responsive" alt=""> -->
                     </a>
                     <div class="portfolio-caption">
                         <h4>Startup Framework</h4>
@@ -162,7 +164,8 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="assets/images/portfolio/treehouse.png" class="img-responsive" alt="">
+                        <%= image_tag("treehouse.png", class: "img-responsive", alt: "") %>
+                        <!-- <img src="assets/images/portfolio/treehouse.png" class="img-responsive" alt=""> -->
                     </a>
                     <div class="portfolio-caption">
                         <h4>Treehouse</h4>
@@ -176,7 +179,8 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="assets/images/portfolio/golden.png" class="img-responsive" alt="">
+                        <%= image_tag("golden.png", class: "img-responsive", alt: "") %>
+                        <!-- <img src="assets/images/portfolio/golden.png" class="img-responsive" alt=""> -->
                     </a>
                     <div class="portfolio-caption">
                         <h4>Golden</h4>
@@ -190,7 +194,8 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="assets/images/portfolio/escape.png" class="img-responsive" alt="">
+                        <%= image_tag("escape.png", class: "img-responsive", alt: "") %>
+                        <!-- <img src="assets/images/portfolio/escape.png" class="img-responsive" alt=""> -->
                     </a>
                     <div class="portfolio-caption">
                         <h4>Escape</h4>
@@ -204,7 +209,8 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="assets/images/portfolio/dreams.png" class="img-responsive" alt="">
+                        <%= image_tag("dreams.png", class: "img-responsive", alt: "") %>
+                        <!-- <img src="assets/images/portfolio/dreams.png" class="img-responsive" alt=""> -->
                     </a>
                     <div class="portfolio-caption">
                         <h4>Dreams</h4>
