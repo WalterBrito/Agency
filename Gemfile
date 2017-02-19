@@ -34,7 +34,6 @@ gem 'bcrypt', '~> 3.1.7'
 # Font-awesome
 gem 'font-awesome-rails'
 gem 'font-awesome-sass'
-gem 'twitter-bootswatch-rails-fontawesome'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
