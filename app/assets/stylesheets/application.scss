@@ -15,8 +15,21 @@
  *= require_self
  */
 
- @import "_variables.scss";
- @import "_mixins.scss";
+ @import "font-awesome-sprockets";
+ @import "font-awesome";
+ @import "_variables";
+ @import "_mixins";
+ // @import "_path";
+ // @import "_core";
+ // @import "_larger";
+ // @import "_fixed-width";
+ // @import "_list";
+ // @import "_bordered-pulled";
+ // @import "_animated";
+ // @import "_rotated-flipped";
+ // @import "_stacked";
+ // @import "_icons";
+ // @import "_screen-reader";
 
  // Global Components
 
