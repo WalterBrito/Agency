@@ -12,5 +12,9 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require twitter/bootstrap
+//= require jqBootstrapValidation
+//= require contact_me
+//= require agency
 //= require turbolinks
 //= require_tree .

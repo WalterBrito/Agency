@@ -33,7 +33,11 @@ gem 'redis', '~> 3.0'
 gem 'bcrypt', '~> 3.1.7'
 # Font-awesome
 gem 'font-awesome-rails'
-gem 'font-awesome-sass'
+gem 'font-awesome-sass', '~> 4.7.0'
+gem 'twitter-bootstrap-rails'
+
+# glyphicons
+gem  'bootstrap-glyphicons'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
